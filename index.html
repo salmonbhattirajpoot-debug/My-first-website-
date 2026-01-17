@@ -1,27 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My First Website</title>
-  </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatima Dev | Professional Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
-  <body>
+<!-- ===== HEADER / NAVBAR ===== -->
+<header class="header">
+    <div class="container nav">
+        <h1 class="logo">Fatima<span>Dev</span></h1>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    </div>
+</header>
 
-    <h1>Hello World!</h1>
-      <p>This is my first HTML website.</p>
+<!-- ===== HERO SECTION ===== -->
+<section class="hero" id="home">
+    <div class="container hero-content">
+        <h2>Build Modern & Professional Websites</h2>
+        <p>I design and develop clean, fast and responsive websites that grow your business online.</p>
+        <a href="#contact" class="btn">Hire Me</a>
+    </div>
+</section>
 
-        <h2>Contact Me</h2>
+<!-- ===== SERVICES ===== -->
+<section class="services" id="services">
+    <div class="container">
+        <h2 class="section-title">My Services</h2>
+        <div class="service-boxes">
+            <div class="service-box">
+                <h3>Web Design</h3>
+                <p>Modern UI/UX designs that attract users and increase engagement.</p>
+            </div>
+            <div class="service-box">
+                <h3>Web Development</h3>
+                <p>Clean, fast and scalable websites using HTML, CSS & JavaScript.</p>
+            </div>
+            <div class="service-box">
+                <h3>Responsive Design</h3>
+                <p>Perfect display on mobile, tablet and desktop devices.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-          <p>📱 WhatsApp:
-              <a href="https://wa.me/923262567090" target="_blank">
-                    Chat on WhatsApp
-                        </a>
-                          </p>
+<!-- ===== ABOUT ===== -->
+<section class="about" id="about">
+    <div class="container about-content">
+        <h2 class="section-title">About Me</h2>
+        <p>
+            I am a passionate web developer focused on creating professional and user-friendly websites.
+            My goal is to deliver high-quality solutions that help clients grow their digital presence.
+        </p>
+    </div>
+</section>
 
-                            <p>📧 Email:
-                                <a href="mailto:salmanbhatti2117@gmail.com">
-                                      salmanbhatti2117@gmail.com
-                                          </a>
-                                            </p>
+<!-- ===== PORTFOLIO ===== -->
+<section class="portfolio" id="portfolio">
+    <div class="container">
+        <h2 class="section-title">Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">Project One</div>
+            <div class="portfolio-item">Project Two</div>
+            <div class="portfolio-item">Project Three</div>
+        </div>
+    </div>
+</section>
 
-                                            </body>
-                                            </html>
+<!-- ===== CONTACT ===== -->
+<section class="contact" id="contact">
+    <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <form class="contact-form" onsubmit="submitForm(event)">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <p>© 2026 Fatima Dev. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
