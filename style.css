@@ -4,14 +4,16 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-                                                                                                                                                                                                                                                                                                                   {
-  scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
     line-height: 1.6;
-    color: #e2e8f0;              /* Light text */
-    background-color: #0f172a;   /* Dark navy background */
+    color: #e2e8f0;
+    background-color: #0f172a;
 }
 
 /* ===== Header / Navbar ===== */
@@ -37,7 +39,7 @@ body {
 .logo {
     font-size: 1.8rem;
     font-weight: 700;
-    color: #38bdf8;   /* Tech blue */
+    color: #38bdf8;
 }
 
 .logo span {
@@ -61,11 +63,12 @@ body {
     color: #38bdf8;
 }
 
-/* ===== Menu Button (Mobile) ===== */
+/* ===== Mobile Menu Button ===== */
 .menu-btn {
     display: none;
     font-size: 1.5rem;
     cursor: pointer;
+    color: #e2e8f0;
 }
 
 /* ===== Hero Section ===== */
@@ -90,6 +93,7 @@ body {
     margin-bottom: 2rem;
 }
 
+/* ===== Buttons ===== */
 .btn {
     display: inline-block;
     padding: 0.75rem 1.5rem;
@@ -103,7 +107,7 @@ body {
 
 .btn:hover {
     background-color: #0ea5e9;
-    color: #fff;
+    color: #ffffff;
 }
 
 /* ===== Sections ===== */
@@ -211,7 +215,7 @@ section {
 }
 
 /* ===== Responsive ===== */
-@media(max-width: 768px) {
+@media (max-width: 768px) {
     .nav-links {
         position: fixed;
         top: 70px;
@@ -224,9 +228,11 @@ section {
         gap: 1.5rem;
         transition: 0.3s;
     }
+
     .nav-links.active {
         right: 0;
     }
+
     .menu-btn {
         display: block;
     }
