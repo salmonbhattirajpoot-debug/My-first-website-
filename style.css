@@ -261,3 +261,30 @@ section {
         font-size: 1rem;
     }
 }
+/* ===== Active Navigation Link ===== */
+.nav-links li a.active-link {
+    color: #0ea5e9; /* Current section highlight */
+    font-weight: 600;
+}
+
+/* ===== Portfolio Hover Improvement ===== */
+.portfolio-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+/* ===== Buttons Hover Smoothness ===== */
+.btn {
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 768px) {
+    .nav-links li a.active-link {
+        color: #38bdf8; /* Slightly brighter for mobile view */
+    }
+}
